@@ -18,7 +18,7 @@ dev.off
 
 ##R plot of oxygen consumption versus temperature with a couple curves for different hive sizes
 png(filename="C:/git/winter_module/Image/metabolism versus hive sizes.png",width=10, height=6, units="in",res=250)
-Nbees=seq(from = 0, to = 9375, by = 5)
+Nbees=seq(from = 0, to = 20000, by = 5)
 vo2totat2=(22.69*(0.128*Nbees)^-0.48)*24*(Nbees*0.128)
 vo2totat15=(4.23*(0.128*Nbees)^-0.27)*24*(Nbees*0.128)
 plot(Nbees,vo2totat2,type='l',col='green',xlab="Number of bees", ylab="Metabolism [mL oxygen per g of bees per hour]")
